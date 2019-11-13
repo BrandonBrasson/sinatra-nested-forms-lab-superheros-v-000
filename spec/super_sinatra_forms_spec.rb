@@ -1,6 +1,6 @@
 describe App do
 
-puts  describe 'GET /' do
+ describe 'GET /' do
     before do
       get '/'
     end
@@ -15,7 +15,7 @@ puts  describe 'GET /' do
     end
   end
 
-puts  describe 'POST /teams' do
+  describe 'POST /teams' do
     it 'submits the form' do
       visit '/'
       fill_in("team[name]", :with => "Team Ruby")
