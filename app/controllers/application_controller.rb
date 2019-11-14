@@ -12,7 +12,7 @@ class App < Sinatra::Base
         erb :JavaScript
       end
 
-     post '/teams' do
+     post '/teams submits the form' do
        @team_name = params[:team][:name]
        @team_motto = params[:team][:motto]
        @hero_name = []
